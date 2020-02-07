@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="opencapi" targetName="opencapi" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8bb0bc3e-122d-40c5-8701-611330458230" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FavoritesManager">
+    <favorites_list name="opencapi" />
+  </component>
+  <component name="ProjectId" id="1XN62StK422q0P1cCWbDQy0apSs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration name="opencapi" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="opencapi" TARGET_NAME="opencapi" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="opencapi" RUN_TARGET_NAME="opencapi">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8bb0bc3e-122d-40c5-8701-611330458230" name="Default Changelist" comment="" />
+      <created>1580873997708</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580873997708</updated>
+      <workItem from="1580873999324" duration="681000" />
+      <workItem from="1580895300990" duration="11660000" />
+      <workItem from="1580956044381" duration="15290000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="477" height="466" key="DebuggerActiveHint" timestamp="1580994765328">
+      <screen x="0" y="24" width="1920" height="997" />
+    </state>
+    <state width="477" height="466" key="DebuggerActiveHint/0.24.1920.997@0.24.1920.997" timestamp="1580994765328" />
+    <state x="688" y="251" key="FileChooserDialogImpl" timestamp="1580874675875">
+      <screen x="0" y="24" width="1920" height="997" />
+    </state>
+    <state x="688" y="251" key="FileChooserDialogImpl/0.24.1920.997@0.24.1920.997" timestamp="1580874675875" />
+    <state width="1868" height="203" key="GridCell.Tab.0.bottom" timestamp="1580995623114">
+      <screen x="0" y="24" width="1920" height="997" />
+    </state>
+    <state width="1868" height="203" key="GridCell.Tab.0.bottom/0.24.1920.997@0.24.1920.997" timestamp="1580995623114" />
+    <state width="1868" height="203" key="GridCell.Tab.0.center" timestamp="1580995623114">
+      <screen x="0" y="24" width="1920" height="997" />
+    </state>
+    <state width="1868" height="203" key="GridCell.Tab.0.center/0.24.1920.997@0.24.1920.997" timestamp="1580995623114" />
+    <state width="1868" height="203" key="GridCell.Tab.0.left" timestamp="1580995623114">
+      <screen x="0" y="24" width="1920" height="997" />
+    </state>
+    <state width="1868" height="203" key="GridCell.Tab.0.left/0.24.1920.997@0.24.1920.997" timestamp="1580995623114" />
+    <state width="1868" height="203" key="GridCell.Tab.0.right" timestamp="1580995623114">
+      <screen x="0" y="24" width="1920" height="997" />
+    </state>
+    <state width="1868" height="203" key="GridCell.Tab.0.right/0.24.1920.997@0.24.1920.997" timestamp="1580995623114" />
+    <state width="1868" height="203" key="GridCell.Tab.1.bottom" timestamp="1580995623115">
+      <screen x="0" y="24" width="1920" height="997" />
+    </state>
+    <state width="1868" height="203" key="GridCell.Tab.1.bottom/0.24.1920.997@0.24.1920.997" timestamp="1580995623115" />
+    <state width="1868" height="203" key="GridCell.Tab.1.center" timestamp="1580995623115">
+      <screen x="0" y="24" width="1920" height="997" />
+    </state>
+    <state width="1868" height="203" key="GridCell.Tab.1.center/0.24.1920.997@0.24.1920.997" timestamp="1580995623115" />
+    <state width="1868" height="203" key="GridCell.Tab.1.left" timestamp="1580995623115">
+      <screen x="0" y="24" width="1920" height="997" />
+    </state>
+    <state width="1868" height="203" key="GridCell.Tab.1.left/0.24.1920.997@0.24.1920.997" timestamp="1580995623115" />
+    <state width="1868" height="203" key="GridCell.Tab.1.right" timestamp="1580995623115">
+      <screen x="0" y="24" width="1920" height="997" />
+    </state>
+    <state width="1868" height="203" key="GridCell.Tab.1.right/0.24.1920.997@0.24.1920.997" timestamp="1580995623115" />
+    <state x="624" y="230" key="run.anything.popup" timestamp="1580993304838">
+      <screen x="0" y="24" width="1920" height="997" />
+    </state>
+    <state x="624" y="230" key="run.anything.popup/0.24.1920.997@0.24.1920.997" timestamp="1580993304838" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>20</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
