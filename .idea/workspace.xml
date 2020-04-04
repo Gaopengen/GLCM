@@ -11,7 +11,17 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bb0bc3e-122d-40c5-8701-611330458230" name="Default Changelist" comment="" />
+    <list default="true" id="8bb0bc3e-122d-40c5-8701-611330458230" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/opencapi.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/opencapi.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/opencapi.dir/GLCM.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/opencapi.dir/GLCM.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/opencapi.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/opencapi.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLCM.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GLCM.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLCM.h" beforeDir="false" afterPath="$PROJECT_DIR$/GLCM.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencapi" beforeDir="false" afterPath="$PROJECT_DIR$/opencapi" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +34,11 @@
   <component name="FavoritesManager">
     <favorites_list name="opencapi" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XN62StK422q0P1cCWbDQy0apSs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -32,6 +46,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -141,6 +156,9 @@
       <workItem from="1580873999324" duration="681000" />
       <workItem from="1580895300990" duration="11660000" />
       <workItem from="1580956044381" duration="15290000" />
+      <workItem from="1581041788087" duration="1787000" />
+      <workItem from="1581507960608" duration="23000" />
+      <workItem from="1585971216516" duration="759000" />
     </task>
     <servers />
   </component>
@@ -148,60 +166,49 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="477" height="466" key="DebuggerActiveHint" timestamp="1580994765328">
+    <state width="513" height="466" key="DebuggerActiveHint" timestamp="1581043007874">
       <screen x="0" y="24" width="1920" height="997" />
     </state>
-    <state width="477" height="466" key="DebuggerActiveHint/0.24.1920.997@0.24.1920.997" timestamp="1580994765328" />
-    <state x="688" y="251" key="FileChooserDialogImpl" timestamp="1580874675875">
+    <state width="513" height="466" key="DebuggerActiveHint/0.24.1920.997@0.24.1920.997" timestamp="1581043007874" />
+    <state x="688" y="251" key="FileChooserDialogImpl" timestamp="1581507981876">
       <screen x="0" y="24" width="1920" height="997" />
     </state>
-    <state x="688" y="251" key="FileChooserDialogImpl/0.24.1920.997@0.24.1920.997" timestamp="1580874675875" />
-    <state width="1868" height="203" key="GridCell.Tab.0.bottom" timestamp="1580995623114">
+    <state x="688" y="251" key="FileChooserDialogImpl/0.24.1920.997@0.24.1920.997" timestamp="1581507981876" />
+    <state width="1868" height="203" key="GridCell.Tab.0.bottom" timestamp="1581043577026">
       <screen x="0" y="24" width="1920" height="997" />
     </state>
-    <state width="1868" height="203" key="GridCell.Tab.0.bottom/0.24.1920.997@0.24.1920.997" timestamp="1580995623114" />
-    <state width="1868" height="203" key="GridCell.Tab.0.center" timestamp="1580995623114">
+    <state width="1868" height="203" key="GridCell.Tab.0.bottom/0.24.1920.997@0.24.1920.997" timestamp="1581043577026" />
+    <state width="1868" height="203" key="GridCell.Tab.0.center" timestamp="1581043577026">
       <screen x="0" y="24" width="1920" height="997" />
     </state>
-    <state width="1868" height="203" key="GridCell.Tab.0.center/0.24.1920.997@0.24.1920.997" timestamp="1580995623114" />
-    <state width="1868" height="203" key="GridCell.Tab.0.left" timestamp="1580995623114">
+    <state width="1868" height="203" key="GridCell.Tab.0.center/0.24.1920.997@0.24.1920.997" timestamp="1581043577026" />
+    <state width="1868" height="203" key="GridCell.Tab.0.left" timestamp="1581043577026">
       <screen x="0" y="24" width="1920" height="997" />
     </state>
-    <state width="1868" height="203" key="GridCell.Tab.0.left/0.24.1920.997@0.24.1920.997" timestamp="1580995623114" />
-    <state width="1868" height="203" key="GridCell.Tab.0.right" timestamp="1580995623114">
+    <state width="1868" height="203" key="GridCell.Tab.0.left/0.24.1920.997@0.24.1920.997" timestamp="1581043577026" />
+    <state width="1868" height="203" key="GridCell.Tab.0.right" timestamp="1581043577026">
       <screen x="0" y="24" width="1920" height="997" />
     </state>
-    <state width="1868" height="203" key="GridCell.Tab.0.right/0.24.1920.997@0.24.1920.997" timestamp="1580995623114" />
-    <state width="1868" height="203" key="GridCell.Tab.1.bottom" timestamp="1580995623115">
+    <state width="1868" height="203" key="GridCell.Tab.0.right/0.24.1920.997@0.24.1920.997" timestamp="1581043577026" />
+    <state width="1868" height="203" key="GridCell.Tab.1.bottom" timestamp="1581043577027">
       <screen x="0" y="24" width="1920" height="997" />
     </state>
-    <state width="1868" height="203" key="GridCell.Tab.1.bottom/0.24.1920.997@0.24.1920.997" timestamp="1580995623115" />
-    <state width="1868" height="203" key="GridCell.Tab.1.center" timestamp="1580995623115">
+    <state width="1868" height="203" key="GridCell.Tab.1.bottom/0.24.1920.997@0.24.1920.997" timestamp="1581043577027" />
+    <state width="1868" height="203" key="GridCell.Tab.1.center" timestamp="1581043577027">
       <screen x="0" y="24" width="1920" height="997" />
     </state>
-    <state width="1868" height="203" key="GridCell.Tab.1.center/0.24.1920.997@0.24.1920.997" timestamp="1580995623115" />
-    <state width="1868" height="203" key="GridCell.Tab.1.left" timestamp="1580995623115">
+    <state width="1868" height="203" key="GridCell.Tab.1.center/0.24.1920.997@0.24.1920.997" timestamp="1581043577027" />
+    <state width="1868" height="203" key="GridCell.Tab.1.left" timestamp="1581043577027">
       <screen x="0" y="24" width="1920" height="997" />
     </state>
-    <state width="1868" height="203" key="GridCell.Tab.1.left/0.24.1920.997@0.24.1920.997" timestamp="1580995623115" />
-    <state width="1868" height="203" key="GridCell.Tab.1.right" timestamp="1580995623115">
+    <state width="1868" height="203" key="GridCell.Tab.1.left/0.24.1920.997@0.24.1920.997" timestamp="1581043577027" />
+    <state width="1868" height="203" key="GridCell.Tab.1.right" timestamp="1581043577027">
       <screen x="0" y="24" width="1920" height="997" />
     </state>
-    <state width="1868" height="203" key="GridCell.Tab.1.right/0.24.1920.997@0.24.1920.997" timestamp="1580995623115" />
+    <state width="1868" height="203" key="GridCell.Tab.1.right/0.24.1920.997@0.24.1920.997" timestamp="1581043577027" />
     <state x="624" y="230" key="run.anything.popup" timestamp="1580993304838">
       <screen x="0" y="24" width="1920" height="997" />
     </state>
     <state x="624" y="230" key="run.anything.popup/0.24.1920.997@0.24.1920.997" timestamp="1580993304838" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>20</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

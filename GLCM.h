@@ -23,8 +23,8 @@ public:
         GLCM_HORIZATION = 0,        // 水平
         GLCM_VERTICAL = 1,          // 垂直
         GLCM_ANGLE45 = 2,           // 45度角
-        GLCM_ANGLE135 = 3,           // 135度角
-        MY_GRAYLEVEL = 256
+        GLCM_ANGLE135 = 3,          // 135度角
+        MY_GRAYLEVEL = 256          // 像素灰度级
     };
 
     GLCM();
@@ -38,7 +38,7 @@ public:
     void calFeature(cv::Mat mat_in, GLCMfeatures &features);
 
 private:
-    // calculate horizontal matrix
+    // 计算水平灰度共生矩阵
     void getHorizonGLCM(cv::Mat src, cv::Mat &dst, int imgWidth, int imgHeight);
     // 计算垂直灰度共生矩阵
     void getVerticalGLCM(cv::Mat src, cv::Mat &dst, int imgWidth, int imgHeight);
@@ -59,7 +59,5 @@ void createMatrix(int const row, int const col, T** &m){
         m[i] = new T[col];
     }
 }
-
-
 
 #endif //OPENCAPI_GLCM_H

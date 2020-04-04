@@ -7,14 +7,7 @@
 #include <iostream>
 
 //Initialize GLCM matrix
-GLCM::GLCM(){
-//    mat_heri = cv::Mat::zeros(256,256, CV_32FC1);
-//    mat_heri = cv::Mat(256,256,CV_32FC1);
-//    mat_ver = cv::Mat::zeros(256,256, CV_32FC1);
-//
-//    mat_ang45 = cv::Mat::zeros(256,256, CV_32FC1);
-//    mat_ang135 = cv::Mat::zeros(256,256, CV_32FC1);
-}
+GLCM::GLCM(){}
 
 
 double GLCM::calGLCM(cv::Mat mat_in, int angle) {
@@ -82,7 +75,7 @@ void GLCM::calFeature(cv::Mat mat_in, GLCMfeatures &features) {
     //COR
     double ux,uy,sigmax,sigmay;
 //    double COR;
-    ux = uy = sigmax = sigmay = COR = 0.0;
+    ux = uy = sigmax = sigmay = 0.0;
     for(i = 0; i < L; i++)
         for(j = 0; j < L; j++){
             ux += i * mat_in.at<float>(i,j);
@@ -108,8 +101,8 @@ void GLCM::getHorizonGLCM(cv::Mat src, cv::Mat &dst, int imgWidth, int imgHeight
     int i,j;
     unsigned char vi, vj;
     double total = 0.0;
-    for (i = 0; i < imgHeight-1; i++)
-        for(j = 0; j < imgWidth-2; j++) {
+    for (i = 0; i < imgHeight; i++)
+        for(j = 0; j < imgWidth-1; j++) {
             vi = src.at<uchar>(i, j);
             vj = src.at<uchar>(i, j + 1);
             dst.at<float>(vi, vj) = dst.at<float>(vi, vj) + 1.0;
@@ -130,8 +123,8 @@ void GLCM::getVerticalGLCM(cv::Mat src, cv::Mat &dst, int imgWidth, int imgHeigh
     int i,j;
     unsigned char vi, vj;
     double total = 0.0;
-    for (i = 0; i < imgHeight-2; i++)
-        for(j = 0; j < imgWidth-1; j++) {
+    for (i = 0; i < imgHeight-1; i++)
+        for(j = 0; j < imgWidth; j++) {
             vi = src.at<uchar>(i, j);
             vj = src.at<uchar>(i+1, j);
             dst.at<float>(vi, vj) = dst.at<float>(vi, vj) + 1;
@@ -151,8 +144,8 @@ void GLCM::getGLCM45(cv::Mat src, cv::Mat &dst, int imgWidth, int imgHeight) {
     int i,j;
     unsigned char vi, vj;
     double total = 0.0;
-    for (i = 0; i < imgHeight-2; i++)
-        for(j = 0; j < imgWidth-2; j++) {
+    for (i = 0; i < imgHeight-1; i++)
+        for(j = 0; j < imgWidth-1; j++) {
             vi = src.at<uchar>(i, j);
             vj = src.at<uchar>(i+1, j+1);
             dst.at<float>(vi, vj) = dst.at<float>(vi, vj) + 1;
@@ -172,8 +165,8 @@ void GLCM::getGLCM135(cv::Mat src, cv::Mat &dst, int imgWidth, int imgHeight) {
     int i,j;
     unsigned char vi, vj;
     double total = 0.0;
-    for (i = 1; i < imgHeight-1; i++)
-        for(j = 0; j < imgWidth-2; j++) {
+    for (i = 1; i < imgHeight; i++)
+        for(j = 0; j < imgWidth-1; j++) {
             vi = src.at<uchar>(i, j);
             vj = src.at<uchar>(i-1, j+1);
             dst.at<float>(vi, vj) = dst.at<float>(vi, vj) + 1;
