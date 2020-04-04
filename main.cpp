@@ -17,7 +17,7 @@ int main() {
     GLCMfeatures glcMfeatures;
 
     a = cv::imread("1.png");
-    cv::Mat b = cv::Mat::ones(a.rows, a.cols, CV_8UC1);
+//    cv::Mat b = cv::Mat::ones(a.rows, a.cols, CV_8UC1);
 //    cv::Mat out = cv::Mat::zeros(glcm.my_graylevel,glcm.my_graylevel,CV_8UC1);
     cv::cvtColor(a,a,cv::COLOR_BGR2GRAY);
 
@@ -31,8 +31,8 @@ int main() {
 //    cv::eigen2cv(test, m);
 //    k = glcm.calGLCM(m);//test for created matrix
 
-//    k = glcm.calGLCM(a);
-    k = glcm.calGLCM(b);
+    k = glcm.calGLCM(a);
+//    k = glcm.calGLCM(b);
     cout << "k is: " << k << endl;
     cv::imshow("hello", a);
     cv::waitKey(0);

@@ -13,21 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8bb0bc3e-122d-40c5-8701-611330458230" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/opencapi.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/opencapi.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/opencapi.dir/GLCM.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/opencapi.dir/GLCM.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/opencapi.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/opencapi.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/opencapi.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/opencapi.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/opencapi.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/opencapi.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/opencapi.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/opencapi.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GLCM.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GLCM.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GLCM.h" beforeDir="false" afterPath="$PROJECT_DIR$/GLCM.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opencapi" beforeDir="false" afterPath="$PROJECT_DIR$/opencapi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opencapi.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/opencapi.cbp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,6 +152,7 @@
       <workItem from="1581041788087" duration="1787000" />
       <workItem from="1581507960608" duration="23000" />
       <workItem from="1585971216516" duration="8275000" />
+      <workItem from="1585994744726" duration="226000" />
     </task>
     <servers />
   </component>
@@ -173,6 +160,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="453" y="39" width="1011" height="952" key="CommitChangelistDialog2" timestamp="1585994998225">
+      <screen x="0" y="24" width="1920" height="997" />
+    </state>
+    <state x="453" y="39" width="1011" height="952" key="CommitChangelistDialog2/0.24.1920.997@0.24.1920.997" timestamp="1585994998225" />
     <state width="513" height="466" key="DebuggerActiveHint" timestamp="1581043007874">
       <screen x="0" y="24" width="1920" height="997" />
     </state>
