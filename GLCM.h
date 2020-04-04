@@ -46,6 +46,8 @@ private:
     void getGLCM45(cv::Mat src, cv::Mat &dst, int imgWidth, int imgHeight);
     // 计算 135 度灰度共生矩阵
     void getGLCM135(cv::Mat src, cv::Mat &dst, int imgWidth, int imgHeight);
+    //矩阵归一化
+    void normalization(cv::Mat &src);
 
 public:
     int my_graylevel = 256;

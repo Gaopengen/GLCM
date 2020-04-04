@@ -6,6 +6,9 @@
 #include <math.h>
 #include <iostream>
 
+using std::cout;
+using std::endl;
+
 //Initialize GLCM matrix
 GLCM::GLCM(){}
 
@@ -21,6 +24,7 @@ double GLCM::calGLCM(cv::Mat mat_in, int angle) {
     getVerticalGLCM(mat_in, mat_ver, rows, cols);
     getGLCM45(mat_in, mat_ang45, rows, cols);
     getGLCM135(mat_in, mat_ang135, rows, cols);
+
 
     std::cout << mat_heri << std::endl;
     std::cout << mat_ver << std::endl;
@@ -41,7 +45,7 @@ double GLCM::calGLCM(cv::Mat mat_in, int angle) {
 
 void GLCM::calFeature(cv::Mat mat_in, GLCMfeatures &features) {
 
-    int L = mat_in.rows;
+    int L = MY_GRAYLEVEL;
     int i,j;
 
     //ASM
@@ -69,7 +73,7 @@ void GLCM::calFeature(cv::Mat mat_in, GLCMfeatures &features) {
     for(i = 0; i < L; i++)
         for(j = 0; j < L; j++){
             if(mat_in.at<float>(i,j) > 0.00000003)
-                features.ENT += -mat_in.at<float>(i,j) * log10(mat_in.at<float>(i,j));
+                features.ENT += -mat_in.at<float>(i,j) * log2(mat_in.at<float>(i,j));
         }
 
     //COR
@@ -92,7 +96,10 @@ void GLCM::calFeature(cv::Mat mat_in, GLCMfeatures &features) {
         for(j = 0; j < L; j++){
             features.COR += i * j * mat_in.at<float>(i,j);
         }
-    features.COR = (features.COR - ux * uy)/(sigmax * sigmay);
+    if(features.COR - ux * uy > 0.00000003)
+        features.COR = (features.COR - ux * uy)/(sigmax * sigmay);
+    else
+        features.COR = 0.0;
     features.k = features.CON + features.ENT - features.ASM - features.IDM - features.COR;
 }
 
@@ -100,84 +107,94 @@ void GLCM::calFeature(cv::Mat mat_in, GLCMfeatures &features) {
 void GLCM::getHorizonGLCM(cv::Mat src, cv::Mat &dst, int imgWidth, int imgHeight) {
     int i,j;
     unsigned char vi, vj;
-    double total = 0.0;
-    for (i = 0; i < imgHeight; i++)
-        for(j = 0; j < imgWidth-1; j++) {
-            vi = src.at<uchar>(i, j);
-            vj = src.at<uchar>(i, j + 1);
-            dst.at<float>(vi, vj) = dst.at<float>(vi, vj) + 1.0;
-        }
 
-    for(i = 0; i < MY_GRAYLEVEL-1; i++)
-        for(j = 0; j < MY_GRAYLEVEL-1; j++){
-            total += dst.at<float>(i,j);
+    for(i = 0; i < imgHeight; i++){
+        for(j = 0; j < imgWidth; j++){
+            vi = src.at<uchar>(i,j);
+            if(j+1 < imgWidth){
+                vj = src.at<uchar>(i,j+1);
+                dst.at<float>(vi,vj) = dst.at<float>(vi, vj) + 1.0;
+            }
+            if(j-1 >= 0){
+                vj = src.at<uchar>(i,j-1);
+                dst.at<float>(vi,vj) = dst.at<float>(vi, vj) + 1.0;
+            }
         }
+    }
 
-    for(i = 0; i < MY_GRAYLEVEL-1; i++)
-        for(j = 0; j < MY_GRAYLEVEL-1; j++){
-            dst.at<float>(i,j) = dst.at<float>(i,j)/total;
-        }
+    normalization(dst);
 }
+
 
 void GLCM::getVerticalGLCM(cv::Mat src, cv::Mat &dst, int imgWidth, int imgHeight) {
     int i,j;
     unsigned char vi, vj;
-    double total = 0.0;
-    for (i = 0; i < imgHeight-1; i++)
+
+    for (i = 0; i < imgHeight; i++)
         for(j = 0; j < imgWidth; j++) {
             vi = src.at<uchar>(i, j);
-            vj = src.at<uchar>(i+1, j);
-            dst.at<float>(vi, vj) = dst.at<float>(vi, vj) + 1;
+            if(i+1 < imgHeight){
+                vj = src.at<uchar>(i+1, j);
+                dst.at<float>(vi, vj) = dst.at<float>(vi, vj) + 1.0;
+            }
+            if(i-1 >= 0){
+                vj = src.at<uchar>(i-1,j);
+                dst.at<float>(vi, vj) = dst.at<float>(vi, vj) + 1.0;
+            }
         }
-    for(i = 0; i < MY_GRAYLEVEL; i++)
-        for(j = 0; j < MY_GRAYLEVEL; j++){
-            total += dst.at<float>(i,j);
-        }
-
-    for(i = 0; i < MY_GRAYLEVEL; i++)
-        for(j = 0; j < MY_GRAYLEVEL; j++){
-            dst.at<float>(i,j) = dst.at<float>(i,j)/total;
-        }
+    normalization(dst);
 }
 
 void GLCM::getGLCM45(cv::Mat src, cv::Mat &dst, int imgWidth, int imgHeight) {
     int i,j;
     unsigned char vi, vj;
-    double total = 0.0;
-    for (i = 0; i < imgHeight-1; i++)
-        for(j = 0; j < imgWidth-1; j++) {
-            vi = src.at<uchar>(i, j);
-            vj = src.at<uchar>(i+1, j+1);
-            dst.at<float>(vi, vj) = dst.at<float>(vi, vj) + 1;
-        }
-    for(i = 0; i < MY_GRAYLEVEL; i++)
-        for(j = 0; j < MY_GRAYLEVEL; j++){
-            total += dst.at<float>(i,j);
-        }
 
-    for(i = 0; i < MY_GRAYLEVEL; i++)
-        for(j = 0; j < MY_GRAYLEVEL; j++){
-            dst.at<float>(i,j) = dst.at<float>(i,j)/total;
+    for(i = 0; i < imgHeight; i++)
+        for(j = 0; j < imgWidth; j++){
+            vi = src.at<uchar>(i,j);
+            if(i + 1 < imgHeight && j + 1 < imgWidth){
+                vj = src.at<uchar>(i+1, j+1);
+                dst.at<float>(vi, vj) += 1.0;
+            }
+            if(i-1 >= 0 && j-1 >= 0){
+                vj = src.at<uchar>(i-1, j-1);
+                dst.at<float>(vi, vj) += 1.0;
+            }
         }
+    normalization(dst);
 }
 
 void GLCM::getGLCM135(cv::Mat src, cv::Mat &dst, int imgWidth, int imgHeight) {
     int i,j;
     unsigned char vi, vj;
-    double total = 0.0;
-    for (i = 1; i < imgHeight; i++)
-        for(j = 0; j < imgWidth-1; j++) {
+
+    for (i = 0; i < imgHeight; i++)
+        for(j = 0; j < imgWidth; j++) {
             vi = src.at<uchar>(i, j);
-            vj = src.at<uchar>(i-1, j+1);
-            dst.at<float>(vi, vj) = dst.at<float>(vi, vj) + 1;
+            if(i-1 >= 0 && j+1 < imgWidth){
+                vj = src.at<uchar>(i-1, j+1);
+                dst.at<float>(vi, vj) += 1.0;
+            }
+            if(i + 1 < imgHeight && j-1 >=0){
+                vj = src.at<uchar>(i+1, j-1);
+                dst.at<float>(vi, vj) += 1.0;
+            }
         }
+
+    normalization(dst);
+}
+
+
+void GLCM::normalization(cv::Mat &mat){
+    float total = 0.0;
+    int i,j;
     for(i = 0; i < MY_GRAYLEVEL; i++)
         for(j = 0; j < MY_GRAYLEVEL; j++){
-            total += dst.at<float>(i,j);
+            total += mat.at<float>(i,j);
         }
 
     for(i = 0; i < MY_GRAYLEVEL; i++)
         for(j = 0; j < MY_GRAYLEVEL; j++){
-            dst.at<float>(i,j) = dst.at<float>(i,j)/total;
+            mat.at<float>(i,j) = mat.at<float>(i,j)/total;
         }
 }
